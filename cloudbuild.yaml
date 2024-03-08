@@ -27,4 +27,4 @@ steps:
       - "--allow-unauthenticated"
 timeout: "1600s"
 images:
-  - "$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA"
+  - "$_GCR_HOSTNAME/$PROJECT_ID/cdbackend/$_SERVICE_NAME:$COMMIT_SHA"
