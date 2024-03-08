@@ -74,7 +74,7 @@ export const updateProduct = async (req: Request, res: Response) => {
   // this approach should avoid the TypeScript error.
   await updateDoc(docRef, productUpdate);
 
-  res.send("Producto actualizado");
+  res.send("Se actualizó el producto correctamente");
 };
 
 export const deleteProduct = async (req: Request, res: Response) => {
