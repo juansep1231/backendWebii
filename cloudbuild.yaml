@@ -26,7 +26,5 @@ steps:
       - "$_PLATFORM"
       - "--allow-unauthenticated"
 timeout: "1600s"
-options:
-  logging: CLOUD_LOGGING_ONLY
 images:
   - "$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA"
