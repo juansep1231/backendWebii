@@ -23,7 +23,7 @@ steps:
       - "deploy"
       - "$_SERVICE_NAME"
       - "--image"
-      - "$_GCR_HOSTNAME/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA"
+      - "$_GCR_HOSTNAME/$PROJECT_ID/cdbackend/$_SERVICE_NAME:$COMMIT_SHA"
       - "--region"
       - "$_DEPLOY_REGION"
       - "--platform"
