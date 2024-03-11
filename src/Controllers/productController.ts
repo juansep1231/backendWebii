@@ -50,7 +50,7 @@ export const postProduct = async (req: Request, res: Response) => {
       url, // Ensure this matches your schema and previous mention of 'url' vs 'imageurl'
     });
 
-    res.json({ message: "Nuevo producto creado", id: docRef.id });
+    res.json({ message: "Nuevo producto creado<!", id: docRef.id });
   } catch (error) {
     console.error("Error creating new product: ", error);
     res.status(500).send("Error creating new product");
